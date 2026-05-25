@@ -1,0 +1,698 @@
+ticket_id,status,product_area,response,justification,request_type,confidence_score,source_documents,risk_level,pii_detected,language,actions_taken
+T0001,replied,devplatform_account_access,"Here's the relevant guidance from our documentation:
+Deleting your DevPlatform account
+To request deletion of your DevPlatform Community account:
+1. Sign in to the account you want to delete.
+2. Open Account Settings > Privacy & data.
+3. Choose Delete account and follow the confirmation flow.
+Accounts created via Google / SSO login
+If you signed up with Google or another single-sign-on provider, you do
+not have a separate DevPlatform password — that is expected. Use the
+Continue with Google button at the sign-in page to access the
+account, then follow the deletion flow above.
+What gets deleted
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.264 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6959,data/devplatform/account/delete-account.md|data/devplatform/account/password-reset.md,low,false,en,[]
+T0002,replied,claude_general,"Here's what our documentation says:
+Setting up Claude for an LTI-based classroom
+Claude offers LTI 1.3 integration so professors can provision Claude
+access to students from inside a learning-management system (LMS) like
+Canvas, Moodle, or Blackboard.
+To set up an LTI integration
+1. Request LTI access from your Claude account team or via the
+Education contact form on claude.com.
+2. Once approved, you'll receive an LTI issuer, client ID, and
+the JWKS/launch URLs to enter into your LMS.
+3. In your LMS, add Claude as an external tool using those values.
+4. Configure roster sync (recommended): students are then
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.036 | domain=claude | decision=heuristic_fallback | reasons=conversation_pressure_tactic,product_issue,0.5524,data/claude/edu/lti-setup.md,low,false,en,[]
+T0003,replied,devplatform_fraud_dispute,"Here's what our documentation says:
+What the candidate sees
+The candidate sees the adjusted duration on the test start screen, even
+though the original invite email may show the base duration. This is
+expected — the platform applies the accommodation at start time.
+When to reinvite
+If the test has not been started, the existing invite stays valid and
+the time accommodation will apply automatically — no reinvite needed. If
+the test has already been started or completed, reinvitation rules apply
+(see test-invites.md).
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=high | retrieval_top1=1.232 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_high_dispute,product_issue,0.5548,data/devplatform/candidates/time-accommodation.md,high,false,en,[]
+T0004,replied,visa_billing,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.264 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6278,data/visa/cards/atm-pin-blocked.md,medium,false,en,[]
+T0005,replied,visa_billing,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=0.930 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,conversation_pressure_tactic,scope_ambiguous",invalid,0.4620,data/visa/cards/atm-pin-blocked.md,medium,false,en,[]
+T0006,replied,visa_general,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.935 | domain=devplatform | decision=heuristic_fallback | reasons=scope_ambiguous,invalid,0.5921,data/visa/cards/atm-pin-blocked.md,low,false,en,[]
+T0007,replied,devplatform_general,"From our help center on this topic:
+Managing your DevPlatform workspace subscription
+Workspace owners can manage seats, plan tier, and billing settings.
+Pausing a subscription
+You can pause a workspace subscription when you have temporarily
+stopped hiring. While paused:
+- Existing candidates retain access to in-flight tests.
+- You cannot send new invites.
+- Billing is suspended for the pause window.
+To pause, open Settings > Billing > Pause subscription and choose a
+pause length (1, 3, or 6 months). At the end of the window the
+subscription resumes automatically.
+If you need a custom pause duration or an immediate
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.183 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6326,data/devplatform/billing/subscription-management.md,low,false,en,[]
+T0008,replied,devplatform_general,"Thanks for reaching out — that's outside the scope of what I can help with here (DevPlatform, Claude, or Visa support). If you have a support question about one of those products, share the details and I'll route it to the right team.",state=RESOLVED | reason=harmless_out_of_scope:weak_signal | risk=low | retrieval_top1=0.954 | domain=devplatform | decision=heuristic_fallback | reasons=scope_harmless,invalid,0.3000,,low,false,en,[]
+T0009,replied,devplatform_assessment,"Here's the relevant guidance from our documentation:
+Disadvantages and limitations
+- A test must have at least two variants to function as a variant test.
+- You cannot delete a variant if only two exist (the test would no
+longer qualify as a variant test).
+- Variants without routing logic are hidden from candidates until logic
+is added.
+- Reporting structure is shared across variants; you cannot diverge it
+arbitrarily.
+When to create a separate test instead
+- Roles are fundamentally different (e.g. Backend engineer vs designer).
+- You need a different time budget per role.
+- You need a different proctoring or scoring rubric per ro
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.969 | domain=devplatform | decision=heuristic_fallback | reasons=scope_ambiguous,invalid,0.5824,data/devplatform/tests/test-variants.md,low,false,en,[]
+T0010,replied,claude_assessment,"From our help center on this topic:
+- Check the project scope — instructions only apply to conversations
+started inside the Project, not to chats opened from the main
+sidebar.
+- Refresh the conversation — newly added instructions are picked up
+on the next user turn, not retroactively in the existing turn.
+- Check the model — some older models in Project context may have
+shorter effective instruction windows; switching to the current
+model usually resolves this.
+- Verify the instructions are saved — open the project settings and
+confirm the instructions text is present and saved.
+If the instructio
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=0.928 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,scope_ambiguous",invalid,0.5573,data/claude/projects/projects-instructions.md,medium,false,en,[]
+T0011,replied,devplatform_assessment,"Based on the documented process, here's how this works:
+Sending and managing test invites
+A test invite is the link a candidate uses to start an assessment.
+Sending an invite
+1. From the workspace dashboard, open the Tests tab.
+2. Choose the test you want to send.
+3. Click Invite candidate and enter the candidate's email.
+4. The candidate receives an email from [email_redacted] with a
+one-time-use invite link.
+Invite links are valid for 7 days by default. Workspace admins can change
+this in Settings > Tests > Invite link lifetime.
+Resending an invite
+If a candidate does not receive the email, you can resend the s
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.130 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6750,data/devplatform/tests/test-invites.md,low,false,en,[]
+T0012,replied,devplatform_assessment,"Here's what our documentation says:
+Adding extra time (time accommodation) for candidates
+You can grant extra time to one or more candidates for a specific test.
+Time is added as a percentage of the base test duration; the
+configured percentage must be in multiples of 5 (e.g. 25%, 50%, 75%).
+Steps to add time accommodation
+1. Log in to your DevPlatform for Work account.
+2. Open the Tests tab and select the test.
+3. Open the Candidates tab.
+4. Tick the checkbox next to the candidate(s) needing accommodation.
+5. Click More > Add Time Accommodation.
+6. Enter the accommodation percentage (multiples of 5).
+7.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.241 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6543,data/devplatform/candidates/time-accommodation.md,low,false,en,[]
+T0013,escalated,visa_general,"I don't have enough detail in this ticket to help safely. Please share more context (the product, what you tried, and what happened) and I'll route it to the right team.","state=ESCALATED | reason=insufficient_signal | risk=low | retrieval_top1=1.098 | decision=heuristic_fallback | reasons=insufficient_signal,scope_ambiguous",invalid,0.6000,,low,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""normal"", ""queue"": ""tier1_general"", ""reason"": ""Ticket has insufficient content to classify confidently.""}}]"
+T0014,replied,devplatform_general,"Here's what our documentation says:
+Removing a user (interviewer / recruiter) from your workspace
+Workspace owners and admins can remove members from a DevPlatform for
+Work workspace.
+To remove a member
+1. Open Settings > Members.
+2. Locate the user you want to remove.
+3. Click the three-dot menu at the end of the row, then **Remove
+from workspace**.
+If the three-dot menu does not show a Remove option:
+- Verify your own role: only owners and admins can remove other
+members. Standard recruiters or interviewers see a limited menu.
+- Verify the target's role: workspace owners cannot be removed; a new
+ow
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.267 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6569,data/devplatform/workspace/remove-user.md,low,false,en,[]
+T0015,replied,devplatform_general,"Thanks for reaching out — that's outside the scope of what I can help with here (DevPlatform, Claude, or Visa support). If you have a support question about one of those products, share the details and I'll route it to the right team.",state=RESOLVED | reason=harmless_out_of_scope:harmless_out_of_scope | risk=low | retrieval_top1=1.260 | domain=devplatform | decision=heuristic_fallback | reasons=scope_harmless,invalid,0.3000,,low,false,en,[]
+T0016,replied,claude_general,"Here's what our documentation says:
+Claude on AWS Bedrock — common integration issues
+Claude is available on AWS Bedrock as a managed model. Common reasons
+for failing requests:
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.260 | domain=claude | decision=heuristic_fallback,product_issue,0.6255,data/claude/api/projects-and-bedrock.md,low,false,en,[]
+T0017,escalated,visa_general,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=critical_risk_level | risk=critical | retrieval_top1=1.166 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_critical_account_takeover,scope_ambiguous",invalid,0.4663,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""critical"", ""queue"": ""tier3_fraud"", ""reason"": ""Critical-risk pattern detected (fraud/legal/safety).""}}]"
+T0018,replied,visa_general,"Thanks for reaching out — that's outside the scope of what I can help with here (DevPlatform, Claude, or Visa support). If you have a support question about one of those products, share the details and I'll route it to the right team.",state=RESOLVED | reason=harmless_out_of_scope:harmless_out_of_scope | risk=low | retrieval_top1=0.926 | domain=devplatform | decision=heuristic_fallback | reasons=scope_harmless,invalid,0.3000,,low,false,en,[]
+T0019,replied,visa_general,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.890 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6323,data/visa/cards/atm-pin-blocked.md,low,false,en,[]
+T0020,replied,visa_billing,"Here's the relevant guidance from our documentation:
+Disputing a Visa transaction
+If you see a charge on your statement that you do not recognise or believe
+is incorrect, you can open a dispute. Disputes are handled by your card-
+issuing bank in coordination with Visa.
+Before you call
+Have ready:
+- The transaction date and amount.
+- The merchant name as shown on the statement.
+- The reason for the dispute (unauthorised, duplicate, service not
+received, or service not as described).
+Steps
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=high | retrieval_top1=1.266 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_high_dispute,product_issue,0.6022,data/visa/disputes/dispute-process.md,high,false,en,[]
+T0021,replied,claude_bug_report,"Here's the relevant guidance from our documentation:
+Reporting a security vulnerability in Claude
+runs a public security disclosure programme. To report a
+suspected vulnerability:
+1. Visit the security disclosure page on.com.
+2. Submit a detailed report including: affected product, version,
+reproduction steps, observed vs expected behavior, and impact.
+3. Do not publish the vulnerability before our security team has
+acknowledged and addressed it (responsible disclosure).
+We aim to acknowledge submissions within 5 business days. Some
+vulnerabilities are eligible for a bounty under our Bug Bounty
+programme; the s
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.291 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,bug,0.5874,data/claude/security/report-vulnerability.md,medium,false,en,[]
+T0022,replied,claude_general,"Here's the relevant guidance from our documentation:
+Opting your website out of crawling by 
+web crawler identifies itself by its user-agent. To opt your
+website out of crawling, add a robots.txt rule that disallows the
+crawler.
+Robots.txt example
+```
+User-agent: -ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+```
+Use both user-agent names — crawler has used both
+identifiers historically.
+What this does NOT do
+- It does not remove content that was previously crawled. Submit a
+separate removal request through the Privacy contact form for past
+data.
+- It does not prevent Claude users f
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.278 | domain=claude | decision=heuristic_fallback,product_issue,0.6421,data/claude/privacy/website-crawling-opt-out.md,low,false,en,[]
+T0023,replied,visa_general,"From our help center on this topic:
+Most issuers do not return ATM-captured cards. Instead, they
+cancel the card and issue a replacement to your registered address.
+You will need to set a new PIN once you receive the new card.
+If you are stranded abroad
+If you have no other payment method and you are traveling, prioritize
+the GCAS call — they can arrange emergency cash to a Western Union or
+similar pickup point within hours.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.202 | domain=visa | decision=heuristic_fallback | reasons=conversation_pressure_tactic,product_issue,0.5540,data/visa/cards/atm-pin-blocked.md,low,false,en,[]
+T0024,replied,claude_general,"Based on the documented process, here's how this works:
+Backups and operational logs may retain data for a short period after
+deletion (typically 30 days) before being purged.
+Model training opt-out
+You can opt your account out of model training in **Settings > Privacy
+& data controls**. New conversations after the opt-out are not used to
+improve models. Past conversations remain subject to the prior settings.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.265 | domain=claude | decision=heuristic_fallback,product_issue,0.6699,data/claude/privacy/data-retention.md,low,false,en,[]
+T0025,escalated,claude_general,"I'm not able to help with that request. If you have a support question about DevPlatform, Claude, or Visa, please send it as a normal request and a teammate will respond.",state=ESCALATED | reason=suspicious_out_of_scope:suspicious_capability_request | risk=low | retrieval_top1=1.075 | decision=heuristic_fallback | reasons=scope_suspicious,invalid,0.5849,,low,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Out-of-scope capability request flagged for review.""}}]"
+T0026,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=1.258 | domain=visa | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_1.00",invalid,0.3715,,critical,false,fr,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0027,replied,claude_general,"Here's what our documentation says:
+Claude on AWS Bedrock — common integration issues
+Claude is available on AWS Bedrock as a managed model. Common reasons
+for failing requests:
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.279 | domain=claude | decision=heuristic_fallback,product_issue,0.6420,data/claude/api/projects-and-bedrock.md,low,false,en,[]
+T0028,replied,devplatform_general,"Here's what our documentation says:
+Removing a user (interviewer / recruiter) from your workspace
+Workspace owners and admins can remove members from a DevPlatform for
+Work workspace.
+To remove a member
+1. Open Settings > Members.
+2. Locate the user you want to remove.
+3. Click the three-dot menu at the end of the row, then **Remove
+from workspace**.
+If the three-dot menu does not show a Remove option:
+- Verify your own role: only owners and admins can remove other
+members. Standard recruiters or interviewers see a limited menu.
+- Verify the target's role: workspace owners cannot be removed; a new
+ow
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.258 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6186,data/devplatform/workspace/remove-user.md,low,false,en,[]
+T0029,replied,claude_general,"Here's what our documentation says:
+Setting up Claude for an LTI-based classroom
+Claude offers LTI 1.3 integration so professors can provision Claude
+access to students from inside a learning-management system (LMS) like
+Canvas, Moodle, or Blackboard.
+To set up an LTI integration
+1. Request LTI access from your Claude account team or via the
+Education contact form on claude.com.
+2. Once approved, you'll receive an LTI issuer, client ID, and
+the JWKS/launch URLs to enter into your LMS.
+3. In your LMS, add Claude as an external tool using those values.
+4. Configure roster sync (recommended): students are then
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.271 | domain=claude | decision=heuristic_fallback,product_issue,0.6237,data/claude/edu/lti-setup.md,low,false,en,[]
+T0030,replied,visa_general,"Here's what our documentation says:
+""The merchant says I have to spend a minimum amount on my Visa card""
+In many markets, **Visa's network rules prohibit merchants from
+imposing a minimum-purchase amount for credit-card transactions**.
+However, US-based merchants may set a minimum of up to $10 for
+credit card transactions under federal law — and that minimum
+cannot apply to debit cards.
+US Virgin Islands and other US territories
+In US territories (including the US Virgin Islands), merchants are
+allowed to set a minimum of up to $10 for credit-card transactions.
+They are not allowed to:
+- Set a minimum hi
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.311 | domain=visa | decision=heuristic_fallback,product_issue,0.6608,data/visa/cards/minimum-spend-merchant.md,low,false,en,[]
+T0031,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.96 | retrieval_top1=1.106 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_0.96,scope_ambiguous",invalid,0.3601,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0032,replied,visa_general,"From our help center on this topic:
+The exact perks per tier vary by market and issuer. The complimentary
+insurance benefits that some travel policies require typically only
+apply at the Signature and Infinite tiers.
+How to check your tier
+1. Look at the front of your card — the tier name (e.g. ""Platinum"",
+""Signature"") is usually printed below the Visa logo.
+2. Check your card's terms-and-conditions document from your issuing
+bank.
+3. Call the customer-service number on the back of the card if you
+cannot find it.
+Upgrading
+Tier upgrades are handled by your issuing bank, not Visa. Contact your
+bank to r
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.089 | decision=heuristic_fallback | reasons=scope_ambiguous,invalid,0.6014,data/visa/cards/card-tiers.md,low,false,en,[]
+T0033,escalated,devplatform_billing,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,state=ESCALATED | reason=critical_risk_level | risk=critical | retrieval_top1=1.006 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_critical_fraud,product_issue,0.5625,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""critical"", ""queue"": ""tier3_fraud"", ""reason"": ""Critical-risk pattern detected (fraud/legal/safety).""}}]"
+T0034,escalated,visa_billing,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=high_pii_financial:pii=account_id,address,ssn | risk=high | retrieval_top1=1.208 | domain=visa | decision=heuristic_fallback | reasons=pii_account_id,pii_address,pii_ssn,risk_pattern_high_billing,risk_pii_high_value,conversation_pressure_tactic",product_issue,0.4902,,high,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""tier3_fraud"", ""reason"": ""Multiple high-value PII categories + financial/billing intent.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket contains 3 PII categories (account_id, address, ssn) plus a financial/billing claim. Identity verification required."", ""tags"": [""pii_detected"", ""fraud_review""]}}]"
+T0035,replied,visa_assessment,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.260 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6240,data/visa/cards/atm-pin-blocked.md,medium,false,en,[]
+T0036,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.98 | retrieval_top1=1.045 | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_0.98,scope_harmless",invalid,0.3475,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0037,escalated,claude_general,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=high_risk_sensitive:pattern_high:compliance | risk=high | retrieval_top1=1.259 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_high_compliance,conversation_pressure_tactic",product_issue,0.5271,,high,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""tier3_legal"", ""reason"": ""Sensitive-topic high-risk ticket (legal/access/safety).""}}]"
+T0038,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=1.259 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_1.00",invalid,0.4174,,critical,false,de,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0039,escalated,visa_general,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=consistency_anomaly:cross_ticket_reference,pressure_tactic | risk=medium | retrieval_top1=1.192 | domain=visa | decision=heuristic_fallback | reasons=pii_account_id,risk_pii_medium_value,conversation_cross_ticket_reference,conversation_pressure_tactic",product_issue,0.2541,,medium,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Multi-turn inconsistency / impersonation signals.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Consistency flags: cross_ticket_reference,pressure_tactic"", ""tags"": [""suspected_injection""]}}]"
+T0040,replied,claude_assessment,"Here's the relevant guidance from our documentation:
+Reporting a security vulnerability in Claude
+runs a public security disclosure programme. To report a
+suspected vulnerability:
+1. Visit the security disclosure page on.com.
+2. Submit a detailed report including: affected product, version,
+reproduction steps, observed vs expected behavior, and impact.
+3. Do not publish the vulnerability before our security team has
+acknowledged and addressed it (responsible disclosure).
+We aim to acknowledge submissions within 5 business days. Some
+vulnerabilities are eligible for a bounty under our Bug Bounty
+programme; the s
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.931 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6180,data/claude/security/report-vulnerability.md,low,false,en,[]
+T0041,escalated,claude_general,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,state=ESCALATED | reason=high_risk_sensitive:pattern_high:compliance | risk=high | retrieval_top1=1.270 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_high_compliance,product_issue,0.5882,,high,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""tier3_legal"", ""reason"": ""Sensitive-topic high-risk ticket (legal/access/safety).""}}]"
+T0042,replied,claude_general,"Here's what our documentation says:
+Conversation and workspace data isolation in Claude
+Each Claude account has its own private conversation history. Other
+users — including members of your workspace, family-shared Apple/Google
+accounts, or other people who use the same browser profile after signing
+out — cannot see your conversations.
+What is NOT shared
+- Personal conversation history between Claude accounts.
+- Uploaded files between separate accounts.
+- Project instructions or memories between accounts.
+What IS shared (when you opt in)
+- Conversations explicitly shared via the Share link feature.
+- Files added
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.267 | domain=claude | decision=heuristic_fallback,product_issue,0.6715,data/claude/privacy/workspace-data-isolation.md,low,false,en,[]
+T0043,replied,visa_billing,"Based on the documented process, here's how this works:
+Visa Zero Liability Policy
+Visa's Zero Liability Policy protects cardholders from unauthorized
+transactions where the cardholder is not at fault. The policy is
+applied by the card-issuing bank, not by Visa directly.
+What is covered
+- Unauthorized signature transactions and online transactions where the
+cardholder did not authorize the charge.
+- Transactions reported promptly to the issuing bank.
+What may NOT be covered
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=high | retrieval_top1=1.266 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_high_billing,product_issue,0.5862,data/visa/disputes/zero-liability-policy.md,high,false,en,[]
+T0044,replied,devplatform_assessment,"From our help center on this topic:
+Resetting your DevPlatform password
+If you cannot sign in to your DevPlatform workspace, you can reset your
+password from the sign-in page.
+1. Open the sign-in page and choose Forgot password?.
+2. Enter the email address associated with your DevPlatform account.
+3. Check that inbox for a reset link from [email_redacted]. The
+link is valid for 30 minutes.
+4. Open the link and set a new password.
+If you do not receive the email within 5 minutes:
+- Check your spam folder.
+- Ask your workspace admin to confirm your email is correctly listed.
+- If your account uses single sign
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.215 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,bug,0.6255,data/devplatform/account/password-reset.md,medium,false,en,[]
+T0045,replied,visa_general,"Here's what our documentation says:
+""The merchant says I have to spend a minimum amount on my Visa card""
+In many markets, **Visa's network rules prohibit merchants from
+imposing a minimum-purchase amount for credit-card transactions**.
+However, US-based merchants may set a minimum of up to $10 for
+credit card transactions under federal law — and that minimum
+cannot apply to debit cards.
+US Virgin Islands and other US territories
+In US territories (including the US Virgin Islands), merchants are
+allowed to set a minimum of up to $10 for credit-card transactions.
+They are not allowed to:
+- Set a minimum hi
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.273 | domain=visa | decision=heuristic_fallback,product_issue,0.6173,data/visa/cards/minimum-spend-merchant.md,low,false,en,[]
+T0046,escalated,claude_api_usage,"I'm not able to help with that request. If you have a support question about DevPlatform, Claude, or Visa, please send it as a normal request and a teammate will respond.","state=ESCALATED | reason=suspicious_out_of_scope:suspicious_capability_request | risk=medium | retrieval_top1=1.256 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,scope_suspicious",invalid,0.5535,,medium,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Out-of-scope capability request flagged for review.""}}]"
+T0047,replied,claude_assessment,"Here's the relevant guidance from our documentation:
+Publishes its sub-processor list and current security
+certifications (SOC 2 Type II, ISO 27001) on the Trust Center. SOC 2
+reports and DPA templates are available under NDA from your account
+team.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.927 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6344,data/claude/enterprise/compliance.md,low,false,en,[]
+T0048,escalated,visa_billing,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,state=ESCALATED | reason=critical_risk_level | risk=critical | retrieval_top1=1.134 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_critical_account_takeover,product_issue,0.5395,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""critical"", ""queue"": ""tier3_fraud"", ""reason"": ""Critical-risk pattern detected (fraud/legal/safety).""}}]"
+T0049,replied,claude_general,"Based on the documented process, here's how this works:
+Claude subscription refund eligibility
+Refunds for Claude Pro, Claude Team, and Claude Enterprise subscriptions
+are evaluated case by case. As a general rule:
+- Accidental upgrade reported within 24 hours: usually refundable.
+- Double-charge in the same billing period: refundable; we will
+also block the duplicate at the card-network level.
+- Service outage that prevented use of paid features: refundable
+pro-rated to the outage duration.
+- Cancellation just after a renewal you forgot about: not
+automatically refundable, but the billing team can issue goodwill
+credit
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.255 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6271,data/claude/billing/refund-eligibility.md,medium,false,en,[]
+T0050,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.95 | retrieval_top1=1.113 | domain=claude | decision=heuristic_fallback | reasons=prompt_injection_critical,pii_account_id,risk_injection_critical_0.95,risk_pii_medium_value",invalid,0.4080,,critical,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0051,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=1.241 | domain=visa | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_1.00,scope_ambiguous",invalid,0.3307,,critical,false,zh,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0052,escalated,devplatform_assessment,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=high_risk_sensitive:pattern_high:legal pattern_high:financial | risk=high | retrieval_top1=0.897 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_high_legal,risk_pattern_high_financial,conversation_pressure_tactic",product_issue,0.4538,,high,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""tier3_legal"", ""reason"": ""Sensitive-topic high-risk ticket (legal/access/safety).""}}]"
+T0053,replied,devplatform_general,"Here's the relevant guidance from our documentation:
+Test variants — when to use them and tradeoffs
+A variant lets one DevPlatform test adapt itself to different
+candidate profiles (e.g. React vs Angular vs Vue front-end roles)
+without duplicating the entire test.
+When to use variants
+Create variants when:
+- The role family is the same but the tech stack differs.
+- The shared skills (e.g. Data structures, algorithms) should be tested
+consistently across all candidates.
+- You want a single report template with role-specific sections.
+Advantages
+- Reduces the number of separate tests you need to maintain.
+- Decreases administra
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.228 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6361,data/devplatform/tests/test-variants.md,low,false,en,[]
+T0054,replied,claude_bug_report,"From our help center on this topic:
+Claude Projects — instructions and persistent context
+A Project in Claude is a workspace that bundles instructions, files,
+and conversations under a shared context. When you start a new
+conversation inside a Project, Claude reads the project instructions and
+attached files as system context.
+If project instructions don't appear to apply
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.265 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,bug,0.6253,data/claude/projects/projects-instructions.md,medium,false,en,[]
+T0055,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.98 | retrieval_top1=1.159 | domain=claude | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_0.98,risk_pattern_high_financial,conversation_cross_ticket_reference,conversation_pressure_tactic",invalid,0.1658,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0056,replied,visa_general,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.275 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6333,data/visa/cards/atm-pin-blocked.md,medium,false,en,[]
+T0057,escalated,claude_billing,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=critical_risk_level | risk=critical | retrieval_top1=1.239 | domain=claude | decision=heuristic_fallback | reasons=pii_email,risk_pattern_critical_fraud,risk_pii_medium_value",product_issue,0.5409,,critical,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""critical"", ""queue"": ""tier3_fraud"", ""reason"": ""Critical-risk pattern detected (fraud/legal/safety).""}}]"
+T0058,replied,devplatform_general,"Here's the relevant guidance from our documentation:
+Deleting your DevPlatform account
+To request deletion of your DevPlatform Community account:
+1. Sign in to the account you want to delete.
+2. Open Account Settings > Privacy & data.
+3. Choose Delete account and follow the confirmation flow.
+Accounts created via Google / SSO login
+If you signed up with Google or another single-sign-on provider, you do
+not have a separate DevPlatform password — that is expected. Use the
+Continue with Google button at the sign-in page to access the
+account, then follow the deletion flow above.
+What gets deleted
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.258 | domain=devplatform | decision=heuristic_fallback | reasons=scope_ambiguous,invalid,0.6368,data/devplatform/account/delete-account.md|data/claude/conversation-management/delete-rename-conversation.md,low,false,en,[]
+T0059,replied,devplatform_general,"From our help center on this topic:
+- Pause is reversible and keeps your data live.
+- Cancellation ends the subscription at the current period end.
+Your data is retained for 90 days, after which it is purged unless
+you renew.
+Educational / nonprofit pricing
+Educational institutions and nonprofits may qualify for discounted
+plans. Submit an application through **Settings > Billing > Educational
+pricing**. Approval typically takes 5–7 business days.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.255 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6491,data/devplatform/billing/subscription-management.md,low,false,en,[]
+T0060,replied,visa_general,"Here's what our documentation says:
+""The merchant says I have to spend a minimum amount on my Visa card""
+In many markets, **Visa's network rules prohibit merchants from
+imposing a minimum-purchase amount for credit-card transactions**.
+However, US-based merchants may set a minimum of up to $10 for
+credit card transactions under federal law — and that minimum
+cannot apply to debit cards.
+US Virgin Islands and other US territories
+In US territories (including the US Virgin Islands), merchants are
+allowed to set a minimum of up to $10 for credit-card transactions.
+They are not allowed to:
+- Set a minimum hi
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.271 | domain=visa | decision=heuristic_fallback,product_issue,0.6585,data/visa/cards/minimum-spend-merchant.md,low,false,en,[]
+T0061,replied,devplatform_assessment,"Here's the relevant guidance from our documentation:
+Test variants — when to use them and tradeoffs
+A variant lets one DevPlatform test adapt itself to different
+candidate profiles (e.g. React vs Angular vs Vue front-end roles)
+without duplicating the entire test.
+When to use variants
+Create variants when:
+- The role family is the same but the tech stack differs.
+- The shared skills (e.g. Data structures, algorithms) should be tested
+consistently across all candidates.
+- You want a single report template with role-specific sections.
+Advantages
+- Reduces the number of separate tests you need to maintain.
+- Decreases administra
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.203 | domain=devplatform | decision=heuristic_fallback,product_issue,0.6593,data/devplatform/tests/test-variants.md,low,false,en,[]
+T0062,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=1.259 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_1.00",invalid,0.3952,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0063,replied,claude_billing,"Based on the documented process, here's how this works:
+Claude subscription refund eligibility
+Refunds for Claude Pro, Claude Team, and Claude Enterprise subscriptions
+are evaluated case by case. As a general rule:
+- Accidental upgrade reported within 24 hours: usually refundable.
+- Double-charge in the same billing period: refundable; we will
+also block the duplicate at the card-network level.
+- Service outage that prevented use of paid features: refundable
+pro-rated to the outage duration.
+- Cancellation just after a renewal you forgot about: not
+automatically refundable, but the billing team can issue goodwill
+credit
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=high | retrieval_top1=1.263 | domain=claude | decision=heuristic_fallback | reasons=pii_account_id,risk_pattern_high_dispute,risk_pii_medium_value",product_issue,0.6054,data/claude/billing/refund-eligibility.md,high,true,en,[]
+T0064,replied,claude_api_usage,"Based on the documented process, here's how this works:
+Claude API rate limits
+Rate limits are applied per organization and per model. They are expressed
+in three dimensions: requests per minute (RPM), input tokens per minute
+(ITPM), and output tokens per minute (OTPM).
+When you hit a rate limit, the API returns HTTP 429 with a
+retry-after header indicating how long to wait before retrying.
+How to avoid 429s
+- Implement exponential backoff with jitter on 429 responses.
+- Cache results when a request is idempotent.
+- For batch workloads, use the Files / Batches APIs which run against a
+separate, higher rate limit.
+If your workload genu
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=0.929 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_medium_bug,product_issue,0.6059,data/claude/api/rate-limits.md,medium,false,en,[]
+T0065,replied,visa_general,"From our help center on this topic:
+Visa card tiers — Classic, Gold, Platinum, Signature, Infinite
+Visa cards are issued in several tiers, each with a different set of
+benefits. The tier is decided by the issuing bank, not Visa
+directly. Visa sets the minimum benefits standard for each tier.
+Common tiers (consumer credit/debit)
+- Visa Classic — entry-level, basic Zero Liability protection.
+- Visa Gold — higher card limits, extended warranty perks.
+- Visa Platinum — travel-related perks, lounge passes in some
+markets.
+- Visa Signature — enhanced travel benefits, complimentary travel
+insurance in ma
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.266 | domain=visa | decision=heuristic_fallback,product_issue,0.6709,data/visa/cards/card-tiers.md,low,false,en,[]
+T0066,replied,claude_general,"Thanks for reaching out — that's outside the scope of what I can help with here (DevPlatform, Claude, or Visa support). If you have a support question about one of those products, share the details and I'll route it to the right team.",state=RESOLVED | reason=harmless_out_of_scope:harmless_out_of_scope | risk=low | retrieval_top1=1.259 | domain=claude | decision=heuristic_fallback | reasons=scope_harmless,invalid,0.3000,,low,false,en,[]
+T0067,replied,claude_general,"Here's the relevant guidance from our documentation:
+Claude enterprise compliance — HIPAA, BAA, data residency
+Claude Enterprise is the right tier for organizations with
+regulated-data requirements. Standard Claude consumer and Claude Team
+subscriptions are not certified for HIPAA-regulated workloads.
+HIPAA
+For HIPAA-regulated use cases, contact the Claude Enterprise sales team
+to request a Business Associate Agreement (BAA). Once a BAA is signed,
+you can use Claude within the agreed scope.
+Data residency
+Enterprise customers can request that conversations and uploaded files
+be stored in a specified region. Available regions and exa
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=0.928 | domain=devplatform | decision=heuristic_fallback | reasons=pii_phone,risk_pii_medium_value",product_issue,0.6069,data/claude/enterprise/compliance.md,medium,true,en,[]
+T0068,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.92 | retrieval_top1=1.117 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,pii_account_id,pii_phone,risk_injection_critical_0.92,risk_pii_medium_value",invalid,0.4169,,critical,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0069,replied,visa_general,"Here's the relevant guidance from our documentation:
+Disputing a Visa transaction
+If you see a charge on your statement that you do not recognise or believe
+is incorrect, you can open a dispute. Disputes are handled by your card-
+issuing bank in coordination with Visa.
+Before you call
+Have ready:
+- The transaction date and amount.
+- The merchant name as shown on the statement.
+- The reason for the dispute (unauthorised, duplicate, service not
+received, or service not as described).
+Steps
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.087 | domain=visa | decision=heuristic_fallback,product_issue,0.6443,data/visa/disputes/dispute-process.md,low,false,es,[]
+T0070,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=1.264 | domain=visa | decision=heuristic_fallback | reasons=prompt_injection_critical,pii_ssn,risk_injection_critical_1.00,risk_pii_high_value,conversation_cross_ticket_reference",invalid,0.4281,,critical,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0071,escalated,devplatform_billing,This looks like a situation that needs a human review. I'm escalating to the appropriate team and they'll be in touch.,"state=ESCALATED | reason=high_risk_sensitive:pattern_high:legal pattern_high:dispute | risk=high | retrieval_top1=1.211 | domain=devplatform | decision=heuristic_fallback | reasons=risk_pattern_high_legal,risk_pattern_high_dispute",product_issue,0.5939,,high,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""tier3_legal"", ""reason"": ""Sensitive-topic high-risk ticket (legal/access/safety).""}}]"
+T0072,escalated,safety_review,"I don't have enough detail in this ticket to help safely. Please share more context (the product, what you tried, and what happened) and I'll route it to the right team.","state=ESCALATED | reason=insufficient_signal | risk=critical | injection_score=0.85 | retrieval_top1=1.080 | decision=heuristic_fallback | reasons=insufficient_signal,prompt_injection_critical,risk_injection_critical_0.85,scope_ambiguous",invalid,0.3356,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""normal"", ""queue"": ""tier1_general"", ""reason"": ""Ticket has insufficient content to classify confidently.""}}]"
+T0073,escalated,claude_general,"I don't have enough detail in this ticket to help safely. Please share more context (the product, what you tried, and what happened) and I'll route it to the right team.",state=ESCALATED | reason=insufficient_signal | risk=low | retrieval_top1=1.089 | decision=heuristic_fallback | reasons=insufficient_signal,invalid,0.5953,,low,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""normal"", ""queue"": ""tier1_general"", ""reason"": ""Ticket has insufficient content to classify confidently.""}}]"
+T0074,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=1.00 | retrieval_top1=0.926 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_1.00,scope_ambiguous",invalid,0.3339,,critical,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0075,escalated,visa_general,"I don't have enough detail in this ticket to help safely. Please share more context (the product, what you tried, and what happened) and I'll route it to the right team.",state=ESCALATED | reason=insufficient_signal | risk=low | retrieval_top1=1.268 | domain=visa | decision=heuristic_fallback | reasons=insufficient_signal,product_issue,0.6000,,low,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""normal"", ""queue"": ""tier1_general"", ""reason"": ""Ticket has insufficient content to classify confidently.""}}]"
+T0076,escalated,claude_general,"I don't have enough detail in this ticket to help safely. Please share more context (the product, what you tried, and what happened) and I'll route it to the right team.","state=ESCALATED | reason=insufficient_signal | risk=medium | retrieval_top1=0.926 | domain=visa | decision=heuristic_fallback | reasons=insufficient_signal,pii_phone,risk_pii_medium_value",product_issue,0.6000,,medium,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""normal"", ""queue"": ""tier1_general"", ""reason"": ""Ticket has insufficient content to classify confidently.""}}]"
+T0077,replied,claude_assessment,"From our help center on this topic:
+Deleting a conversation removes it from your account and queues it for
+permanent deletion from storage according to the retention
+schedule published on privacy.claude.com. Uploaded files attached to the
+conversation are also deleted as part of this process.
+If you used the conversation for sensitive content, also consider using
+Temporary Chat going forward — these conversations are not saved to
+your history.
+Reference: https://privacy.claude.com/en/articles/[phone_redacted]-how-can-i-delete-or-rename-a-conversation
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=0.880 | domain=devplatform | decision=heuristic_fallback,product_issue,0.5987,data/claude/conversation-management/delete-rename-conversation.md,low,false,en,[]
+T0078,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.95 | retrieval_top1=1.258 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_critical,risk_injection_critical_0.95,conversation_soft_exfiltration_last_turn,scope_ambiguous",invalid,0.1527,,critical,false,it,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0079,replied,visa_general,"From our help center on this topic:
+ATM kept my card / I forgot my PIN
+ATMs commonly capture (retain) a Visa card after three consecutive
+incorrect PIN attempts. The captured card stays in the ATM until the
+operating bank retrieves and disposes of it during the next
+maintenance cycle (usually within 1–2 business days).
+Immediate steps
+1. Note the ATM details — bank name, branch, ATM ID, date/time.
+2. Call your card issuer using the number on the back of your card
+to confirm the PIN block and block the card from further use.
+3. If you cannot reach the issuer, call Visa Global Customer Assistance
+([phone_redacted]
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.266 | domain=visa | decision=heuristic_fallback,product_issue,0.6749,data/visa/cards/atm-pin-blocked.md,low,false,en,[]
+T0080,replied,visa_general,"From our help center on this topic:
+Most issuers do not return ATM-captured cards. Instead, they
+cancel the card and issue a replacement to your registered address.
+You will need to set a new PIN once you receive the new card.
+If you are stranded abroad
+If you have no other payment method and you are traveling, prioritize
+the GCAS call — they can arrange emergency cash to a Western Union or
+similar pickup point within hours.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.209 | domain=visa | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6042,data/visa/cards/atm-pin-blocked.md,medium,false,en,[]
+T0081,replied,claude_general,"Here's what our documentation says:
+If you believe another user's conversations are visible in your account,
+treat this as a serious privacy concern: sign out immediately and
+contact support. We will escalate to the trust-and-safety team for
+investigation. Do not attempt to read or copy the content you're seeing.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.154 | domain=claude | decision=heuristic_fallback | reasons=conversation_pressure_tactic,product_issue,0.5304,data/claude/privacy/workspace-data-isolation.md,low,false,en,[]
+T0082,escalated,claude_api_usage,Thanks for reaching out. I'm not able to take action on this request directly. I've escalated it to a human teammate who will follow up.,"state=ESCALATED | reason=high_injection_signal | risk=high | injection_score=0.84 | retrieval_top1=0.929 | domain=devplatform | decision=heuristic_fallback | reasons=prompt_injection_high,risk_injection_high_0.84",product_issue,0.4098,,high,false,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Possible prompt injection / manipulation pattern.""}}]"
+T0083,replied,claude_general,"Here's what our documentation says:
+Conversation and workspace data isolation in Claude
+Each Claude account has its own private conversation history. Other
+users — including members of your workspace, family-shared Apple/Google
+accounts, or other people who use the same browser profile after signing
+out — cannot see your conversations.
+What is NOT shared
+- Personal conversation history between Claude accounts.
+- Uploaded files between separate accounts.
+- Project instructions or memories between accounts.
+What IS shared (when you opt in)
+- Conversations explicitly shared via the Share link feature.
+- Files added
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.259 | domain=claude | decision=heuristic_fallback,product_issue,0.6697,data/claude/privacy/workspace-data-isolation.md,low,false,en,[]
+T0084,escalated,safety_review,"I cannot follow instructions that try to change how I handle support tickets. I'm flagging this for review by our team. If you have a legitimate support question, please send it as a normal request and a human teammate will respond shortly.","state=ESCALATED | reason=critical_prompt_injection_detected | risk=critical | injection_score=0.95 | retrieval_top1=1.058 | decision=heuristic_fallback | reasons=prompt_injection_critical,pii_account_id,risk_injection_critical_0.95,risk_pii_medium_value,scope_ambiguous",invalid,0.3361,,critical,true,en,"[{""action"": ""escalate_to_human"", ""parameters"": {""priority"": ""high"", ""queue"": ""trust_and_safety"", ""reason"": ""Suspected prompt injection / adversarial input.""}}, {""action"": ""create_internal_note"", ""parameters"": {""note"": ""Ticket flagged by automated safety layer for prompt-injection patterns."", ""tags"": [""suspected_injection""]}}]"
+T0085,replied,devplatform_general,"Here's the relevant guidance from our documentation:
+- Profile information, badges, and solved problems on Community.
+- Any assessment attempts you submitted as a candidate.
+- Workspace seats you held under DevPlatform for Work (separately, your
+workspace admin must remove you from any active workspace before the
+account can be fully closed).
+If your account is part of a paid workspace, contact your workspace
+admin first; some deletion paths require admin acknowledgement.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.260 | domain=devplatform | decision=heuristic_fallback | reasons=pii_email,risk_pii_medium_value",product_issue,0.6278,data/devplatform/account/delete-account.md,medium,true,en,[]
+T0086,replied,claude_billing,"From our help center on this topic:
+Deleting a conversation removes it from your account and queues it for
+permanent deletion from storage according to the retention
+schedule published on privacy.claude.com. Uploaded files attached to the
+conversation are also deleted as part of this process.
+If you used the conversation for sensitive content, also consider using
+Temporary Chat going forward — these conversations are not saved to
+your history.
+Reference: https://privacy.claude.com/en/articles/[phone_redacted]-how-can-i-delete-or-rename-a-conversation
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=1.152 | domain=claude | decision=heuristic_fallback | reasons=risk_pattern_medium_billing,product_issue,0.6118,data/claude/conversation-management/delete-rename-conversation.md|data/claude/privacy/data-retention.md,medium,false,en,[]
+T0087,replied,visa_billing,"Here's what our documentation says:
+""The merchant says I have to spend a minimum amount on my Visa card""
+In many markets, **Visa's network rules prohibit merchants from
+imposing a minimum-purchase amount for credit-card transactions**.
+However, US-based merchants may set a minimum of up to $10 for
+credit card transactions under federal law — and that minimum
+cannot apply to debit cards.
+US Virgin Islands and other US territories
+In US territories (including the US Virgin Islands), merchants are
+allowed to set a minimum of up to $10 for credit-card transactions.
+They are not allowed to:
+- Set a minimum hi
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.271 | domain=visa | decision=heuristic_fallback,product_issue,0.6553,data/visa/cards/minimum-spend-merchant.md,low,false,en,[]
+T0088,replied,claude_general,"From our help center on this topic:
+Deleting a conversation removes it from your account and queues it for
+permanent deletion from storage according to the retention
+schedule published on privacy.claude.com. Uploaded files attached to the
+conversation are also deleted as part of this process.
+If you used the conversation for sensitive content, also consider using
+Temporary Chat going forward — these conversations are not saved to
+your history.
+Reference: https://privacy.claude.com/en/articles/[phone_redacted]-how-can-i-delete-or-rename-a-conversation
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.",state=RESOLVED | reason=grounded_reply | risk=low | retrieval_top1=1.260 | domain=claude | decision=heuristic_fallback,product_issue,0.6662,data/claude/conversation-management/delete-rename-conversation.md|data/claude/privacy/data-retention.md,low,false,en,[]
+T0089,replied,claude_general,"Here's the relevant guidance from our documentation:
+Publishes the IP ranges of its crawler. You can verify
+incoming requests against these ranges if you want stronger evidence
+than the user-agent string.
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=medium | retrieval_top1=0.926 | domain=devplatform | decision=heuristic_fallback | reasons=pii_email,risk_pii_medium_value",product_issue,0.5785,data/claude/privacy/website-crawling-opt-out.md,medium,true,zh,[]
+T0090,replied,visa_billing,"Here's the relevant guidance from our documentation:
+1. Block the card. Call the customer-service number on the back of
+your card and ask the issuing bank to block the card immediately.
+2. Document the fraudulent charges. Note dates, amounts, merchant
+names. The bank will need this when opening cases.
+3. Open a dispute for each fraudulent charge. The bank typically
+issues a provisional credit while it investigates.
+4. File a police report if local laws require one for fraud cases.
+Some banks need a police-report number to finalise the chargeback.
+5. Watch for follow-on attempts. If the card was used for online
+If this doesn't fully address your question, reply to this message and I'll route it to a human teammate.","state=RESOLVED | reason=grounded_reply | risk=high | retrieval_top1=1.132 | domain=visa | decision=heuristic_fallback | reasons=pii_account_id,risk_pattern_high_dispute,risk_pattern_high_financial,risk_pii_medium_value,conversation_cross_ticket_reference",product_issue,0.5868,data/visa/fraud/report-fraud.md,high,true,en,[]
