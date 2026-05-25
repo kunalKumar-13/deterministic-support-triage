@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "description": "Allowed internal tool actions for the support triage agent. Each tool declares its JSON schema, prerequisites, and risk gates. The agent's policy validator enforces these constraints before any action is written to the output CSV.",
+  "tools": [
+    {
+      "name": "verify_identity",
+      "description": "Initiates an identity verification challenge with the user (typically email OTP + last-4 of payment method). Must be run before any destructive or account-modifying action when prior verification is not present in the conversation.",
+      "destructive": false,
+      "requires_identity_verification": false,
+      "min_risk_to_propose": "low",
+      "max_risk_to_execute": "critical",
+      "idempotency_key_fields": ["account_reference"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["account_reference", "method"],
+        "properties": {
+          "account_reference": {
+            "type": "string",
+            "description": "Opaque reference to the account (email-hash, account-id, or last-4 of card). Never the raw email or card number.",
+            "minLength": 4,
+            "maxLength": 64
+          },
+          "method": {
+            "type": "string",
+            "enum": ["email_otp", "phone_otp", "security_questions", "kyc_redo"]
+          }
+        }
+      }
+    },
+    {
+      "name": "issue_refund",
+      "description": "Issue a refund to the user's original payment method. Destructive and irreversible without a second tool call. Identity verification is REQUIRED.",
+      "destructive": true,
+      "requires_identity_verification": true,
+      "min_risk_to_propose": "medium",
+      "max_risk_to_execute": "high",
+      "idempotency_key_fields": ["transaction_reference"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["transaction_reference", "amount", "currency", "reason_code"],
+        "properties": {
+          "transaction_reference": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 64
+          },
+          "amount": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 100000
+          },
+          "currency": {
+            "type": "string",
+            "enum": ["USD", "EUR", "GBP", "INR", "JPY", "AUD", "CAD"]
+          },
+          "reason_code": {
+            "type": "string",
+            "enum": [
+              "duplicate_charge",
+              "service_unavailable",
+              "billing_error",
+              "fraud_investigation",
+              "goodwill"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "lock_account",
+      "description": "Temporarily locks an account pending investigation. Destructive (user is signed out and cannot perform actions). Identity verification is REQUIRED unless this is a fraud_lock issued by the safety subsystem.",
+      "destructive": true,
+      "requires_identity_verification": true,
+      "min_risk_to_propose": "high",
+      "max_risk_to_execute": "critical",
+      "idempotency_key_fields": ["account_reference"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["account_reference", "reason"],
+        "properties": {
+          "account_reference": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 64
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "suspected_fraud",
+              "account_takeover",
+              "policy_violation",
+              "user_requested",
+              "investigation_hold"
+            ]
+          },
+          "duration_hours": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 720
+          }
+        }
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "description": "Route the ticket to a human support agent. Non-destructive. Always allowed.",
+      "destructive": false,
+      "requires_identity_verification": false,
+      "min_risk_to_propose": "low",
+      "max_risk_to_execute": "critical",
+      "idempotency_key_fields": ["ticket_id"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["queue", "priority", "reason"],
+        "properties": {
+          "queue": {
+            "type": "string",
+            "enum": [
+              "tier1_general",
+              "tier2_billing",
+              "tier2_technical",
+              "tier3_fraud",
+              "tier3_legal",
+              "tier3_safety",
+              "trust_and_safety"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["low", "normal", "high", "critical"]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 280
+          },
+          "ticket_id": {
+            "type": "string",
+            "maxLength": 64
+          }
+        }
+      }
+    },
+    {
+      "name": "send_reset_link",
+      "description": "Sends a password / credential reset link to the user's verified contact on file. Non-destructive but auth-sensitive; requires no prior verification because the reset itself is a verification step.",
+      "destructive": false,
+      "requires_identity_verification": false,
+      "min_risk_to_propose": "low",
+      "max_risk_to_execute": "high",
+      "idempotency_key_fields": ["account_reference"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["account_reference", "channel"],
+        "properties": {
+          "account_reference": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 64
+          },
+          "channel": {
+            "type": "string",
+            "enum": ["email", "sms", "in_app"]
+          }
+        }
+      }
+    },
+    {
+      "name": "open_dispute",
+      "description": "Opens a payment dispute / chargeback case. Non-destructive from the user's side but compliance-sensitive. Identity verification REQUIRED.",
+      "destructive": false,
+      "requires_identity_verification": true,
+      "min_risk_to_propose": "medium",
+      "max_risk_to_execute": "high",
+      "idempotency_key_fields": ["transaction_reference"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["transaction_reference", "category"],
+        "properties": {
+          "transaction_reference": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 64
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "unauthorized_transaction",
+              "service_not_received",
+              "service_not_as_described",
+              "duplicate_charge",
+              "amount_differs"
+            ]
+          },
+          "evidence_note": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    {
+      "name": "create_internal_note",
+      "description": "Attaches an internal note to the ticket for the next human agent. Non-destructive, no identity verification required. Useful as a complement to escalate_to_human.",
+      "destructive": false,
+      "requires_identity_verification": false,
+      "min_risk_to_propose": "low",
+      "max_risk_to_execute": "critical",
+      "idempotency_key_fields": ["ticket_id", "note_hash"],
+      "parameters_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["note"],
+        "properties": {
+          "note": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 2000
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "suspected_injection",
+                "pii_detected",
+                "weak_grounding",
+                "contradictory_subject",
+                "multi_product",
+                "out_of_scope",
+                "fraud_review",
+                "legal_review"
+              ]
+            },
+            "uniqueItems": true,
+            "maxItems": 8
+          }
+        }
+      }
+    }
+  ]
+}
