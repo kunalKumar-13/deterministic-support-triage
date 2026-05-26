@@ -1,0 +1,27 @@
+15dea2e docs: polish root README with design philosophy, threat model, performance metrics, architecture diagram
+8f3d6e4 docs: freeze marker for architecture, retrieval, policy ordering
+bb00cf8 build: generated output.csv from real visible test set (90 tickets)
+bd2044b docs: interview prep + war-game + performance + retrieval failure catalogue
+da772e8 docs: hidden-set predictions, retrieval gaps, policy gaps, adversarial matrix
+efd4287 docs: ARCHITECTURE.md with design rationale (A-E) + code/README.md run instructions
+b79659d test: observability scripts (inspector, run analysis, stratified sample, stress test)
+a1c9316 test: comprehensive adversarial suite (19 categories, 84+ tests)
+e1f2829 feat(retrieval): per-run retrieval diagnostics (counters, worst-case examples, run report)
+c0a034b feat(retrieval): consensus validation - numeric + imperative disagreement detection (Phase C)
+9bbf962 feat(conversation): multi-turn consistency analyzer for identity-shift + soft-exfiltration (Phase F)
+639bd46 feat(scope): out-of-scope detector with negation-aware dual-use verb handling (Phase E)
+60349ea data: sample tickets (9 with expected outputs) + real visible test set (90 tickets)
+5e83b1a feat: seed corpus (24 docs across DevPlatform / Claude / Visa)
+7c11681 test: initial unit + adversarial test suite (29 tests)
+6165acc feat: structural output validator + pinned dependencies
+6c7301e feat: pipeline orchestrator + main CLI (terminal entry point)
+202e6f9 feat: grounded response generator with outbound PII scrubber + Brier-aware confidence calibration
+49ba889 feat: policy validator (final controller, deterministic escalation rules)
+f2baa9a feat: LLM decision engine with strict-JSON schema + heuristic fallback
+c9c0607 feat: explicit ticket state machine (NEW/NEEDS_VERIFICATION/VERIFIED/ACTIONABLE/ESCALATED/RESOLVED)
+c7c86bf feat: internal_tools.json schema + typed tool registry with prereq/idempotency/risk gates
+74bbb71 feat: retrieval engine (deterministic chunker, BM25+TF-IDF, RRF merge, trust rerank)
+6fe5cf2 feat: safety engine (injection detection, PII redaction, risk classifier, language id)
+f7e29eb feat: deterministic config, Pydantic domain models, structured logging
+618ae44 docs: phase 0 pre-implementation analysis (architecture notes, threat model, corpus analysis)
+c5d2be7 chore: repository scaffold (gitignore, env.example, root README)
