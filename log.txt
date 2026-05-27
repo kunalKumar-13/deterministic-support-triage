@@ -1,0 +1,178 @@
+MLE Hiring Challenge — AI Coding Assistant Workflow Log
+
+Primary AI tools used:
+- Claude 3.5 Sonnet
+- ChatGPT / GPT-4o
+- VS Code + Claude-assisted iterative development
+
+Development approach:
+The project was developed iteratively using AI-assisted engineering workflows. AI tools were used for architectural brainstorming, implementation acceleration, adversarial hardening, debugging assistance, retrieval design refinement, and test generation. All major architectural decisions, evaluation alignment, and final validation were manually directed and reviewed.
+
+==================================================
+PHASE 0 — REQUIREMENTS + THREAT MODEL ANALYSIS
+==================================================
+
+- Reviewed README.md, AGENTS.md, and evaluation_criteria.md.
+- Identified core evaluation priorities:
+  - deterministic execution
+  - adversarial robustness
+  - safe escalation
+  - retrieval quality
+  - state management
+  - explainability
+  - reproducibility
+
+Key architectural decision:
+- Avoid fully autonomous recursive agents.
+- Use deterministic orchestration with explicit policy validation.
+- Keep escalation authority outside the LLM.
+
+Generated:
+- architecture notes
+- threat model
+- corpus analysis
+- hidden-test predictions
+
+==================================================
+PHASE 1 — CORE PIPELINE IMPLEMENTATION
+==================================================
+
+Implemented deterministic multi-stage pipeline:
+
+preprocess
+→ safety
+→ scope
+→ consistency
+→ routing
+→ retrieval
+→ consensus
+→ LLM inference
+→ policy validation
+→ response generation
+→ confidence calibration
+→ output generation
+
+Key decisions:
+- explicit state machine
+- strict JSON outputs
+- deterministic policy controller
+- no unconstrained tool execution
+
+==================================================
+PHASE 2 — SAFETY + ADVERSARIAL HARDENING
+==================================================
+
+Implemented:
+- multilingual prompt injection detection
+- PII detection + outbound scrubber
+- impersonation detection
+- destructive intent escalation
+- multi-turn consistency analysis
+- retrieval consensus validation
+
+Attack classes tested:
+- prompt injection
+- exfiltration attempts
+- fake employee impersonation
+- retrieval poisoning
+- Unicode/homoglyph obfuscation
+- malformed payloads
+- financial fraud escalation abuse
+
+==================================================
+PHASE 3 — RETRIEVAL + GROUNDING
+==================================================
+
+Implemented:
+- BM25 retrieval
+- TF-IDF retrieval
+- reciprocal-rank fusion
+- lexical reranking
+- document trust signals
+- retrieval diagnostics
+
+Added:
+- citation validation
+- weak grounding detection
+- disagreement consensus scoring
+
+Goal:
+- prevent hallucinated citations
+- improve deterministic retrieval behavior
+
+==================================================
+PHASE 4 — POLICY + CONFIDENCE SYSTEM
+==================================================
+
+Implemented:
+- deterministic policy validator
+- escalation controller
+- confidence calibration
+- safe degradation behavior
+
+Key principle:
+- LLM proposes
+- policy layer decides
+
+Confidence signals:
+- retrieval quality
+- consensus agreement
+- safety signals
+- consistency checks
+- grounding quality
+
+==================================================
+PHASE 5 — TESTING + VALIDATION
+==================================================
+
+Added:
+- adversarial test suite
+- stress tests
+- deterministic hash verification
+- retrieval diagnostics
+- validation scripts
+
+Final verification:
+- 132/132 tests passing
+- deterministic byte-identical outputs
+- 0 hallucinated citations
+- 0 PII echoes
+- stable runtime under stress testing
+
+==================================================
+PHASE 6 — DOCUMENTATION + INTERVIEW PREP
+==================================================
+
+Created:
+- ARCHITECTURE.md
+- threat_model.md
+- retrieval_failure_modes.md
+- interview_war_game.md
+- hidden_test_predictions.md
+- visible_run_analysis.md
+
+Added:
+- self-assessment
+- known limitations
+- tradeoff analysis
+- rationale for deterministic orchestration
+
+==================================================
+FINAL SYSTEM CHARACTERISTICS
+==================================================
+
+Final architecture properties:
+- deterministic orchestration
+- adversarial robustness
+- policy-controlled escalation
+- grounded retrieval
+- calibrated confidence
+- reproducible outputs
+- bounded failure modes
+
+The system intentionally prioritizes:
+- robustness over autonomy
+- safe escalation over risky guessing
+- reproducibility over agentic complexity
+
+End of workflow log.
